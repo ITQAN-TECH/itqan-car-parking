@@ -57,6 +57,7 @@ class FCMService
                             'content-available' => 1,
                             'badge' => 0,
                             'priority' => 'high',
+                            'sound' => 'default',
                         ],
                     ],
                 ],
