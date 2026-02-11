@@ -154,7 +154,7 @@ class TicketController extends Controller
                     "Location: {$location->name}";
                 // JawalySMSService::sendMessage($car->owner_phone, $message);
             } elseif ($ticket->type == 'park_car') {
-                $apiLink = 'https://dashboard.fst.sa/guests/tickets/' . $ticket->ticket_number;
+                $apiLink = 'https://dashboardvalet.iw.net.sa/guests/tickets/' . $ticket->ticket_number;
                 $message = "شكراً لثقتك\n" .
                     "تم فتح تذكرة جديدة لسيارتك {$car->car_number} {$car->car_letter}\n" .
                     "رقم التذكرة: {$ticket->ticket_number}\n" .
